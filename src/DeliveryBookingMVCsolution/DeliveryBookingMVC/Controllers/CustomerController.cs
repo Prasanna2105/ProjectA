@@ -54,22 +54,19 @@ namespace DeliveryBookingMVC.Controllers
         public ActionResult Login(Customer customer)
         {
             int id = _repo.Login(customer);
-            try
-            {
-                if (id != 0)
-                {
-                    TempData["CustomerId"] = id;
-                    return RedirectToAction("CustomerHomePage");
-                    //return RedirectToAction("Create","Bookings");
-                }
-            }
-            catch (Exception e)
 
-            {
-                _logger.LogDebug(e.Message);
 
+            if (id != 0)
+            {
+                TempData["CustomerId"] = id;
+                return RedirectToAction("CustomerHomePage");
+                //return RedirectToAction("Create","Bookings");
             }
-            return RedirectToAction("Error");
+            else
+            {
+
+                return RedirectToAction("Error");
+            }
            
         }
         public IActionResult Edit(int id)
@@ -91,7 +88,7 @@ namespace DeliveryBookingMVC.Controllers
             List<Booking> d = _repo1.GetAll().Where(a => a.CustomerId == id && a.Status == "accepted").ToList();
             if (d.Count() != 0)
             {
-                return View(d);
+                return View(d); 
             }
             else if (d.Count() == 0)
             {

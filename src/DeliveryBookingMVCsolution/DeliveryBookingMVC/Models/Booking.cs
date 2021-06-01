@@ -10,7 +10,7 @@ namespace DeliveryBookingMVC.Models
     {
         [Key]
         [Display(Name ="Booking Id")]
-        public int OrderID { get; set; }
+        public int OrderID { get; set; }    
         [Display(Name = "Customer Id")]
         public int CustomerId { get; set; }
         [Display(Name = "Executive Id")]
@@ -25,13 +25,13 @@ namespace DeliveryBookingMVC.Models
         [Required(ErrorMessage = "Pincode cannot be empty!!")]
         public int PinCode { get; set; }
         [Display(Name = "Phone Number")]
-        [Required(ErrorMessage = "Enter your phone number!!")]
-        //[MaxLength(10, ErrorMessage = "It exceeded the maximum value")]
+        [Required(ErrorMessage = "Phone number cannot be empty!!")]
+        [MaxLength(10, ErrorMessage = "It exceeded the maximum value")]
         [RegularExpression("^[0-9]*$", ErrorMessage = "Should be a number!!")]
         public string Phone { get; set; }
         [Display(Name = "Date and Time of Pickup")]
         [Required(ErrorMessage = "Select Date and Time of Pickup!!")]
-        public DateTime DateandTimeOfPickup { get; set; }
+        public DateTime DateandTimeOfPickup { get; set; } = DateTime.Today;
 
         [Display(Name = "Weight in kg")]
         [Required(ErrorMessage = "Enter the weight of package!!")]

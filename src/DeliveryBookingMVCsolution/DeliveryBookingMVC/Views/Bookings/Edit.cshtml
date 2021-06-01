@@ -1,6 +1,7 @@
 ﻿@model DeliveryBookingMVC.Models.Booking
 
 @{
+    Layout = "~/Views/Shared/ExecutiveLayout.cshtml";
     ViewData["Title"] = "Edit";
 }
 
@@ -20,22 +21,22 @@
             </div>
             <div class="form-group">
                 <label asp-for="ExecutiveId" class="control-label"></label>
-                <input asp-for="ExecutiveId" class="form-control" readonly/>
+                <input asp-for="ExecutiveId" class="form-control" readonly />
                 <span asp-validation-for="ExecutiveId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Address" class="control-label"></label>
-                <input asp-for="Address" class="form-control" readonly/>
+                <textarea asp-for="Address" class="form-control" readonly></textarea>
                 <span asp-validation-for="Address" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="City" class="control-label"></label>
-                <input asp-for="City" class="form-control" readonly/>
+                <input asp-for="City" class="form-control" readonly />
                 <span asp-validation-for="City" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PinCode" class="control-label"></label>
-                <input asp-for="PinCode" class="form-control" readonly/>
+                <input asp-for="PinCode" class="form-control" readonly />
                 <span asp-validation-for="PinCode" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -50,7 +51,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="WeightOfPackage" class="control-label"></label>
-                <input asp-for="WeightOfPackage" class="form-control" readonly/>
+                <input asp-for="WeightOfPackage" class="form-control" readonly />
                 <span asp-validation-for="WeightOfPackage" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -60,7 +61,12 @@
             </div>
             <div class="form-group">
                 <label asp-for="Status" class="control-label"></label>
-                <input asp-for="Status" class="form-control" />
+                @*<input asp-for="Status" class="form-control" />*@
+                @Html.DropDownList("Status", new List<SelectListItem>
+         {
+              new SelectListItem(){Text="accepted", Value="accepted"},
+              new SelectListItem(){Text="rejected",Value="rejected" }
+         }, new { @class = "form-control" })
                 <span asp-validation-for="Status" class="text-danger"></span>
             </div>
             <div class="form-group">

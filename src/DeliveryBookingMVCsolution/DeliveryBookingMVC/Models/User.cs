@@ -11,6 +11,6 @@ namespace DeliveryBookingMVC.Models
         [Display(Name="User Name")]
         public string UserName { get; set; }
         public string Password { get; set; }
-        public string UserType { get; set; }
+       // public string UserType { get; set; }
     }
 }

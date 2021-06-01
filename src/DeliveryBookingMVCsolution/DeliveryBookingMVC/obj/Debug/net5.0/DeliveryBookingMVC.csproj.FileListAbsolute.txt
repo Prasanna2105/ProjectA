@@ -153,8 +153,6 @@ C:\Users\DELL\Desktop\Softura\Project\DeliveryBookingMVCsolution\DeliveryBooking
 C:\Users\DELL\Desktop\Softura\Project\DeliveryBookingMVCsolution\DeliveryBookingMVC\obj\Debug\net5.0\Razor\Views\DeliveryExecutive\Error.cshtml.g.cs
 C:\Users\DELL\Desktop\Softura\Project\DeliveryBookingMVCsolution\DeliveryBookingMVC\obj\Debug\net5.0\Razor\Views\DeliveryExecutive\Login.cshtml.g.cs
 C:\Users\DELL\Desktop\Softura\Project\DeliveryBookingMVCsolution\DeliveryBookingMVC\obj\Debug\net5.0\Razor\Views\DeliveryExecutive\Success.cshtml.g.cs
-C:\Users\DELL\Desktop\Softura\Project\DeliveryBookingMVCsolution\DeliveryBookingMVC\obj\Debug\net5.0\Razor\Views\User\Register.cshtml.g.cs
-C:\Users\DELL\Desktop\Softura\Project\DeliveryBookingMVCsolution\DeliveryBookingMVC\obj\Debug\net5.0\Razor\Views\User\Login.cshtml.g.cs
 C:\Users\DELL\Desktop\Softura\Project\DeliveryBookingMVCsolution\DeliveryBookingMVC\obj\Debug\net5.0\Razor\Views\Bookings\Delete.cshtml.g.cs
 C:\Users\DELL\Desktop\Softura\Project\DeliveryBookingMVCsolution\DeliveryBookingMVC\obj\Debug\net5.0\Razor\Views\Bookings\Details.cshtml.g.cs
 C:\Users\DELL\Desktop\Softura\Project\DeliveryBookingMVCsolution\DeliveryBookingMVC\obj\Debug\net5.0\Razor\Views\Bookings\Edit.cshtml.g.cs

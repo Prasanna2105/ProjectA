@@ -11,7 +11,7 @@ namespace DeliveryBookingMVC.Services
         void Add(T t);
         int Login(T t);
         T Get(int id);
-        //IEnumerable<T> GetAllById(T t);
+       
         void Update(int id, T t);
     }
 }

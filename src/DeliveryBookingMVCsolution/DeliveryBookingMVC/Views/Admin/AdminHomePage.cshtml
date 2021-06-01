@@ -11,48 +11,5 @@
         background-color:lightcyan;
     }
 </style>
-@*<h1>Admin Verification</h1>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Register">
-            <div class="form-group">
-                <label asp-for="UserType" class="control-label"></label>
-                <br />
-                @Html.RadioButton("UserType", "Customer")<label>Customer</label>
-                <br />
-                @Html.RadioButton("UserType", "Executive")<label>Executive</label>
-                <span asp-validation-for="UserType" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Verify" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>*@
-
-    <!--<header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">-->
-                @*<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Delivery Booking System</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>*@
-                <!--<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Customer" asp-action="List">List of Customers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="DeliveryExecutive" asp-action="List">List of Executives</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Home">Logout</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>-->
+    
 <h2>Welcome Admin!!!</h2>

@@ -74,15 +74,7 @@ namespace DeliveryBookingMVC.Controllers
         }
         public IActionResult AdminHomePage()
         {
-            //if (u.UserType == "Customer")
-            //{
-            //    return this.RedirectToAction("Index", "Customer");
-            //}
-            //else if (u.UserType == "Executive")
-            //{
-            //    return this.RedirectToAction("Index", "DeliveryExecutive");
-            //}
-
+            
 
             return View();
         }
