@@ -22,7 +22,8 @@ namespace DeliveryBookingMVC.Models
         [Required(ErrorMessage = "City cannot be empty!!")]
         public string City { get; set; }
         [Display(Name = "Pin Code")]
-        [Required(ErrorMessage = "Pincode cannot be empty!!")]
+        [Required]
+        [Range(100000, 999999, ErrorMessage = "pincode must be 6 digits")]
         public int PinCode { get; set; }
         [Display(Name = "Phone Number")]
         [Required(ErrorMessage = "Phone number cannot be empty!!")]
